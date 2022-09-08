@@ -1,0 +1,13 @@
+program int ONE,TWO; int RES, NUM, CNTR;
+begin read NUM;
+
+ONE = 1; CNTR = 1;
+TWO = 0;
+while (CNTR < NUM) loop
+RES = ONE + TWO;
+TWO = ONE;
+ONE = RES;
+CNTR = CNTR +1;
+write RES;
+end;
+end

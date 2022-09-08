@@ -1,0 +1,24 @@
+Description:
+Tokenizer.java takes in an input data file and - in a do-while 
+loop - reads in the next token using the nextToken method (same
+as skipToken), reading past whitespaces until it registers a non
+EOF token. It reads in characters one at a time to determine if
+it's a 1, 2, or more char token using a switch case.
+Using the token it reads, it assigns it an int identifier, the 
+type of token, and stores the original string of the token read
+from the input file. (all of these are retreivable using
+getToken, intVal, and idName).
+
+Testing:
+Tested the program using the provided test data samples and
+modified versions of the code for different cases.
+
+Known Issues:
+There's only one bug I'm aware of currently:
+    - Everything processes fine with the exception of when there
+    are single char variables/identifiers followed by an end 
+    token or special character, specifically parenthesis or 
+    brackets. 
+    If whitespace is between the tokens or the id is 2 chars 
+    long, there's no issue.
+
